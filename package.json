@@ -27,6 +27,7 @@
     "test": "grunt test"
   },
   "dependencies": {
+    "tasker": "git://github.com/sammerry/tasker.git",
     "deferred": "^0.7.1"
   },
   "devDependencies": {

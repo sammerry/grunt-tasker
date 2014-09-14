@@ -54,7 +54,7 @@ module.exports = function(grunt) {
   function taskRunner () {
     var done = this.async();
     var jobPath = jobList[this.name];
-    var options = grunt.config.get('tasker.'+'this.name')||{};
+    var options = grunt.config.get('tasker.'+ this.name)||{};
     options.path = jobPath;
     return new Tasker(options, done);
   };

@@ -15,7 +15,7 @@ var fs = require('fs');
 module.exports = function(grunt) {
 
   var jobList = {};
-  var jobsDIR = [process.cwd(),grunt.config.get('tasker.tasks_file')].join('/');
+  var jobsDIR = [process.cwd(),grunt.config.get('tasker.options.tasks_file')].join('/');
   var jobsDescription = 'A custom task from the '
                       + grunt.config.get('scraper.jobs')
                       + ' folder';
